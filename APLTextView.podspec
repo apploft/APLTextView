@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APLTextView"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "A text view allowing to set a placeholder text and to specify a maximum allowed character count."
 
   s.description  = <<-DESC
@@ -15,11 +15,11 @@ Pod::Spec.new do |s|
   
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
-  s.author             = { "Michael Kamphausen" => "michael.kamphausen@apploft.de", "Tino Rachui" => "tino.rachui@apploft.de" }
+  s.author       = { "Michael Kamphausen" => "michael.kamphausen@apploft.de", "Tino Rachui" => "tino.rachui@apploft.de" }
   
   s.platform     = :ios, "6.0"
 
-  s.source       = { :git => "https://github.com/apploft/APLTextView.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/apploft/APLTextView.git", :tag => s.version.to_s }
 
   s.source_files  = "Classes", "Classes/**/*.{h,m}"
   
