@@ -83,7 +83,7 @@
     CGFloat counterLabelHeight = 14.;
     CGFloat counterLabelRight = 6.;
     CGFloat counterLabelBottom = 4.;
-    self.counterLabel.frame = CGRectMake(self.frame.size.width - counterLabelWidth - counterLabelRight, self.contentOffset.y + self.frame.size.height - counterLabelHeight - counterLabelBottom, counterLabelWidth, counterLabelHeight);
+    self.counterLabel.frame = CGRectMake(self.frame.size.width - counterLabelWidth - counterLabelRight - self.contentInset.right, self.contentOffset.y + self.frame.size.height - self.contentInset.bottom - counterLabelHeight - counterLabelBottom, counterLabelWidth, counterLabelHeight);
     self.counterLabel.font = self.font;
     self.counterLabel.backgroundColor = [UIColor clearColor];
     self.counterLabel.textColor = [UIColor lightGrayColor];
