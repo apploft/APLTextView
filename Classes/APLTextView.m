@@ -124,7 +124,7 @@
         self.placeholderLabel.hidden = [self.text length];
     }
     if (self.maxCharacters > 0) {
-        if (self.maxCharacters < [self.text length]) {
+        if ((self.markedTextRange == nil) && (self.maxCharacters < [self.text length])) {
             self.text = [self.text substringToIndex:self.maxCharacters];
         }
         [self setCounterText:self.maxCharacters - [self.text length]];
