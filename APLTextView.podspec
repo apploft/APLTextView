@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "APLTextView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "A text view allowing to set a placeholder text and to specify a maximum allowed character count."
 
   s.description  = <<-DESC
